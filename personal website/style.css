@@ -1,0 +1,30 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+/* holding */
+a:link {
+    color: #264653;
+    text-decoration: none;
+  }
+  
+  /* visited */
+  a:visited {
+    color:#2A9D8F ;
+    text-decoration: none;
+  }
+  
+  /* hover */
+  a:hover {
+    color: #E9C46A;
+    text-decoration: underline;
+  }
+  
+  /* selected */
+  a:active {
+    color: #F4A261;
+    text-decoration: underline;
+  }
+  h1, p, h2{
+    color: #264653;
+  }

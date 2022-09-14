@@ -1,0 +1,29 @@
+h1, h2, p, h3{
+    color:#f77f00 ;
+}
+body{
+    background-color: #003049;
+}
+hr{
+   border:2px, #EAE2B7; 
+}
+input {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #FCBF49;
+    color: #003049;
+}
+
+.submit {
+   background-color: #EAE2B7;
+        border: none;
+        color: #003049;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        font-size: 1rem;
+      }
