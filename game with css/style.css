@@ -2,7 +2,7 @@ h1, h2, p, h3{
     color:#f77f00 ;
 }
 body{
-    background-color: #003049;
+    background-color: #EAE2B7;
 }
 hr{
    border:2px, #EAE2B7; 
@@ -27,3 +27,9 @@ input {
         cursor: pointer;
         font-size: 1rem;
       }
+.main{
+ background-color:#003049;  
+ margin:60 20 60 20;
+ padding:20px; 
+ border-radius: 20px;
+}
