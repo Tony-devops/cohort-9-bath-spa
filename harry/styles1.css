@@ -1,0 +1,46 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    color:aliceblue;
+    background-color: black;
+}
+.topbanner{
+    width:100%;
+    height:80vh;
+    background-image: url(./banner.jpg);
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    margin:auto;
+    font-size: 5rem;
+}
+.navbar {
+ display: flex;
+ justify-content: space-around;   
+}
+.navbar li{
+    list-style: none;
+}
+.part1 {
+    display: flex;
+    justify-content: space-around;
+    
+   }
+.imagine{
+    width: 35vmax;
+    padding: 3vw;
+}
+
+.imagine img{
+    width: 35vmax;
+}
+.container{
+    width: 80%;
+    margin:auto;
+    padding-bottom: 20px;
+}
+.container h2{
+    text-align:center;
+}
