@@ -1,0 +1,21 @@
+.slider{
+    height: 40vh;
+}
+.form{
+    height:30vh;
+    padding:10%;
+    text-align: center;
+}
+img{
+    
+    max-height: 40vh;
+}
+.topping{
+    width: 100%;
+    margin:20px 20px;
+    padding: 20px;
+    border: 2px solid black;
+    text-align: center;
+    background-color: gainsboro;
+    border-radius: 20px;
+}
