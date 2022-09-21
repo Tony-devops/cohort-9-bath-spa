@@ -7,8 +7,11 @@
     text-align: center;
 }
 img{
-    
-    max-height: 40vh;
+    height: 50%;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 .topping{
     width: 100%;
