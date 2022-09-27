@@ -81,3 +81,13 @@
         margin-right: -30px;
         margin-bottom: 40px;
      }
+     .new-container{
+        background-color: #ffffff;
+        padding: 30px 30px;
+        width: 80%;
+        justify-content: center;
+        border-radius: 5px;
+        font-family: 'Poppins',sans-serif;
+        box-shadow: 25px 25px 30px rgba(0,0,0,0.15);
+        margin: auto;
+    }

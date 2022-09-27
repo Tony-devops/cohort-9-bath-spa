@@ -46,6 +46,55 @@
 <button id="next">Next</button>
 </div>
 </div>
-    <script src="script.js"></script>
+<br>
+ <div>   
+<div class="new-container">
+    <ul>
+        <li>
+          <p>Money In:</p>
+        </li>
+                <li class="inputHeading">Current Balance</li>
+        <li><input type="text" class="input" id="balanceInput"></li>
+        <li>
+          <p>Money Out:</p>
+        </li>
+        <br>
+        <li class="inputHeading">Rent</li>
+        <li><input type="text" class="input" id="rentInput"></li>
+        <li><input type="button" class="button" value="AMOUNT LEFT" onclick="calcTotal()"></li>
+        <li class="output" id="amountOutput">
+          <p></p>
+        </li>
+      </ul>
+      
+      <p id="balance"></p>
+
+  <script>
+
+function calcTotal() {
+        var inputbal = parseFloat(document.getElementById("balanceInput").value);
+        var inputrent = parseFloat(document.getElementById("rentInput").value);
+        var balance = inputbal - inputrent;
+        document.getElementById("balance").innerHTML = balance.toFixed(2);
+      }
+  </script>
+  </div>
+  <br>
+  <div id="myDIV" class="header">
+    <h2>My Shopping List</h2>
+    <input type="text" id="myInput" placeholder="Title...">
+    <span onclick="newElement()" class="addBtn">Add</span>
+  </div>
+  
+  <ul id="myUL">
+    <li>Hit the gym</li>
+    <li class="checked">Pay bills</li>
+    <li>Meet George</li>
+    <li>Buy eggs</li>
+    <li>Read a book</li>
+    <li>Organize office</li>
+  </ul>
+  <script src="script.js"></script>
+
 </body>
 </html>
