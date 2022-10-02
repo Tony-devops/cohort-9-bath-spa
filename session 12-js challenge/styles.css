@@ -1,35 +1,72 @@
+body{
+  margin: 0;
+}
 .cart{
     justify-content: flex-end;
 }
-body{
+.mainimage{
     background-image: url(./images/background.png);
     background-repeat: no-repeat;
    background-size: cover;
+   
+}
+.mainimagedark{
+  background-image: url(./images/backgrounddark.png);
+  background-repeat: no-repeat;
+ background-size: cover;
+ 
 }
 .flex-main {
     display: flex;
-    justify-content:space-between ;
     
-  }
-  .content-buttons{
-    display: flex;
-    justify-content:center;
-    flex-direction: column;
-  align-items: center;
-  text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    
+      }
   
-    }
-    .content-buttons>div {
-       background-color: transparent;
-        width: 400px;
-        margin: 10px;
-        text-align:left;
-        line-height: 75px;
-        font-size: 30px;
-        padding: 20px;
-    }
-  .button {
-    background-image: linear-gradient(to right, #87CEEB , #FF69B4);
+    #flexend {
+      align-items:flex-end;
+      flex:1;
+      
+      padding-bottom: 0;
+      margin-bottom: 0;
+      
+      
+      }
+      #left{
+        flex: 0 0 50px;
+      
+      }
+      #middle{
+        flex:1;
+        margin-top: 150px;
+        margin-left: 400px;
+       
+        
+        justify-items: center;
+         
+      }
+      #myImg{
+       
+        max-width: 200%;
+        
+      }
+    
+  .button5 {
+    background-image: linear-gradient(45deg, #87CEEB , #FF69B4);
+    border: none;
+    color: white;
+    padding: 25px 90px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .botton {
+    background-color:black;
     border: none;
     color: white;
     padding: 25px 90px;
@@ -43,21 +80,17 @@ body{
   }
 
   .socials{
-display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  width: 10%;
-  height: 1200px;
+  width: auto;
+  height: auto;
   justify-content: center;
    
   }
   
   .socials1{
       padding-bottom: 20px;
+      padding-left: 20px;
       }
-    .woman{
-        justify-content: end;
-        bottom: 0;
-        left: 0; 
-        
-    }
+    

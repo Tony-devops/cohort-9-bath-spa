@@ -6,8 +6,9 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    
 </head>
-<body>
+<body id="one" class="mainimage">
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="Bootstrap" width="auto" height="auto"></a>
@@ -32,32 +33,51 @@
             </div>
             <div class="float-end px-5"><a  href="#"><img src="./images/cart.png" alt="Bootstrap" width="auto" height="auto"></a>
             </div>
+            <button onclick="myFunction()">Dark Mode</button>
         </div>
       </nav>
       
-      <section>
-        <div class="flex-main">
-            <div class="socials">
+        
+      
+     
+        <div class="flex-main"> 
+            <div class="socials" id="left">
                 <div class="socials1"><a href="#"><img src="./images/facebook.png" alt="Bootstrap" width="auto" height="auto"></a></div>
                 <div class="socials1"><a href="#"><img src="./images/instagram.png" alt="Bootstrap" width="auto" height="auto"></a></div>
                 <div class="socials1"><a href="#"><img src="./images/linkedin.png" alt="Bootstrap" width="auto" height="auto"></a></div>
                 <div class="socials1"><a href="#"><img src="./images/twitter.png" alt="Bootstrap" width="auto" height="auto"></a></div>
             </div>
-           <div class="content-buttons">
-                
-            <div>
-                <button class="button" style="align-self: flex-start">2022 Collection</button>
+                          
+            <div id="middle">
+               <br><br><br>
+                <button id="tired" class="button5">2022 Collection</button>
+                <br><br><br>
+                <h1 id="two">You should always <br>feel pretty</h1>
+                <br><br>
+                <h2 id="three">Clothes that are sure to heat up your winter</h2>
+                <br><br>
+                <a href="#"><img src="./images/back-arrow.png" alt="Bootstrap" width="auto" height="auto"></a>
+                <a href="#"><img src="./images/next-arrow.png" alt="Bootstrap" width="100px" height="100px"></a>
+               
             </div>
-            <div><h1>You should always feel pretty</h1></div>
-            <div><h2>Clothes that are sure to heat up your winter</h2>
+            <div id="flexend" style="align-self: flex-end"  >
+                <a href="#"><img id="myImg" src="./images/img.png" alt="Bootstrap" width="auto" height="auto"></a>
+
             </div>
-            <div><a href="#"><img src="./images/back-arrow.png" alt="Bootstrap" width="auto" height="auto"></a>
-                <a href="#"><img src="./images/next-arrow.png" alt="Bootstrap" width="100px" height="100px"></a></div>
-            </div>
-            <div style="align-self: flex-end" ><a href="#"><img src="./images/img.png" alt="Bootstrap" width="auto" height="auto"></a></div>
         </div>
-      </section>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-      <script src="jave.js"></script>
+      
+      
+      <script>
+      function myFunction() {
+const dark= document.getElementById('one');
+dark.classList.replace('mainimage','mainimagedark')
+        const tony = document.getElementById('tired');
+tony.classList.replace('button5','botton');
+        document.getElementById("two").style.color = "black";
+        document.getElementById("three").style.color = "black";
+        document.getElementById("myImg").style.filter = "grayscale(100%)"
+        
+        }
+        </script>
     </body>
 </html>
