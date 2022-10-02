@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mini- Calculator</h1>
+    <br>
+    <input type="'text" id="n1">:Number 1<br><br>
+    <input type="'text" id="n2">:Number 2
+    <br><br>
+    <select id="operators">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="/">/</option>
+        <option value="X">X</option>
+    </select>
+    
+    <button onclick="calc();">=</button>
+    <input type="text" id="result"/>
+    
+    
+    <div>
+        <h1>Shopping List:</h1>
+<ul id="list"></ul>
+<input id="text" />
+<button id="button">Add To List</button>
+
+    </div>
+    
+    
+<script>
+    //shopping list current
+function getNumberOrString(value) {
+  // Convert a string value to a number if possible
+  let number_value = Number(value);
+  if (Number.isNaN(number_value)) {
+    return value
+  } else {
+    return number_value
+  }
+}
+
+
+document.getElementById('button').addEventListener('click', (event) => {
+  let element_list = document.getElementById('list');
+  let new_li = document.createElement('li');
+  new_li.setAttribute("id", 'tony');
+  new_li.innerText = getNumberOrString(document.getElementById('text').value);
+
+  element_list.appendChild(new_li);
+
+});
+    //calculator functions
+     function calc()
+            {
+                var n1 = parseFloat(document.getElementById('n1').value);
+                var n2 = parseFloat(document.getElementById('n2').value);
+                
+                var oper = document.getElementById('operators').value;
+                    if(oper === '+')
+                {
+                    document.getElementById('result').value = n1+n2;
+                }
+                
+                if(oper === '-')
+                {
+                    document.getElementById('result').value = n1-n2;
+                }
+                
+                if(oper === '/')
+                {
+                    document.getElementById('result').value = n1/n2;
+                }
+                
+                if(oper === 'X')
+                {
+                    document.getElementById('result').value = n1*n2;
+                }
+            }
+
+
+</script>
+</body>
+
+</html>
