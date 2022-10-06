@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggling a class with Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="custom-body">
+        <div class="hero">
+            <div>
+                <h1>My amazing website</h1>
+                <button onclick="toggleMode()" id="toggle">Toggle</button>
+                <!-- Rectangular switch -->
+<label class="switch">
+    <input type="checkbox">
+    <span class="slider"></span>
+  </label>
+            </div>
+        </div>
+
+        <script>
+            // Add a class to the body when I click the toggle button.
+            // This class will give dark mode colours to the body and some of its children elements.
+
+
+            // 1.first I need to create a function that adds or removes a class, depending on if the class already exists
+
+            // 2. Then I need to attached that function to an event, using event listener
+
+            function toggleMode() {
+                const body = document.getElementById('custom-body');
+                
+                // if has the dark-mode class then remove the class / else add it 
+                if (body.classList.contains('dark-mode')) {
+                    //remove the class
+                    body.classList.remove('dark-mode');
+                } else {
+                    //add the class
+                    body.classList.add('dark-mode');
+                }
+            }
+
+
+
+        </script>
+</body>
+</html>

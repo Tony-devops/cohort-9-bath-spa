@@ -16,6 +16,16 @@ body{
  background-size: cover;
  
 }
+.hundredone{
+  background-color: blue;
+  
+  border: 1 solid blueviolet;
+ text-decoration: solid;
+
+}
+
+  
+
 .flex-main {
     display: flex;
     

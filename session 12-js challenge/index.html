@@ -33,7 +33,15 @@
             </div>
             <div class="float-end px-5"><a  href="#"><img src="./images/cart.png" alt="Bootstrap" width="auto" height="auto"></a>
             </div>
-            <button onclick="myFunction()">Dark Mode</button>
+            <button id='hundred' onclick="myFunction(); myButtonColor();">Dark Mode</button>
+            <button class="hundredone" onclick="myFunction1()">Lght Mode</button>
+            <div class = 'toggle-switch'>
+              <label>
+                  <input type = 'checkbox'>
+                  <span class = 'slider'></span>
+              </label>
+              
+          </div>
         </div>
       </nav>
       
@@ -68,14 +76,33 @@
       
       
       <script>
+        function myButtonColor(){
+          const solomon=document.getElementById('hundred');
+          solomon.style.backgroundColor='green'
+        }
       function myFunction() {
 const dark= document.getElementById('one');
 dark.classList.replace('mainimage','mainimagedark')
-        const tony = document.getElementById('tired');
+
+const tony = document.getElementById('tired');
 tony.classList.replace('button5','botton');
         document.getElementById("two").style.color = "white";
         document.getElementById("three").style.color = "white";
         document.getElementById("myImg").style.filter = "grayscale(100%)"
+                      
+        }
+        function myButtonColor1(){
+          const solomon=document.getElementById('hundredone');
+          
+        }
+        function myFunction1() {
+const dark= document.getElementById('one');
+dark.classList.replace('mainimagedark','mainimage')
+        const tony = document.getElementById('tired');
+tony.classList.replace('botton','button5');
+        document.getElementById("two").style.color = "blue";
+        document.getElementById("three").style.color = "blue";
+        document.getElementById("myImg").style.filter = "grayscale(0%)"
         
         }
         </script>
