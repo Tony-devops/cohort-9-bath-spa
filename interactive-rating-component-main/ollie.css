@@ -1,0 +1,6 @@
+.card.step1{
+    display: flex;
+}
+.card.step2{
+    display: hidden;
+}
