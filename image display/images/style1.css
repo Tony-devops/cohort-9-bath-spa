@@ -1,0 +1,88 @@
+/* grid*/
+html, body, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body {
+    line-height: 1;
+    background-color: aliceblue;
+    text-align: center;
+    color: chocolate;
+    
+    }
+    .special{
+margin: 20px;
+padding: 20px;
+border: 2px solid azure;
+background-image: linear-gradient(grey, black);
+box-shadow:10px 10px 8px #888888; 
+    }
+
+.item1 { grid-area: header;
+background-image: url(../images/this\ is\ the\ sign\ you\ hae\ waiting\ for.jpg);
+object-fit: cover;
+background-size:100%;
+background-position:center;
+background-repeat: no-repeat;
+ }
+
+.item3 { grid-area: main;
+background-image: url(../images/blockchain.jpg);
+object-fit: cover;
+background-size:100%;
+background-position:center;
+background-repeat: no-repeat; }
+
+.item2 { grid-area: menu;
+background-image: linear-gradient(to bottom right,red,orange,yellow,green,blue,indigo,violet) ;
+
+}
+
+.item4 { grid-area: right;
+background-image: url(../images/conspiracy.jpg);
+object-fit: cover;
+background-size:100%;
+background-position:center;
+background-repeat: no-repeat; }
+
+.item5 { grid-area: footer;
+background-image: url(../images/myenergi-WkqHU1G2_sg-unsplash.jpg);
+object-fit: cover;
+background-size:100%;
+background-position:center;
+background-repeat: no-repeat; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu menu main main right right'
+    'menu menu footer footer footer footer';
+grid-template-rows: 40vh 30vh 30vh;
+  gap: 5px;
+  background-color: rgb(162, 37, 126);
+  padding: 5px;
+}
+
+.grid-container > div {
+  background-color: rgba(202, 240, 223, 0.8);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 30px;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: lavender;
+  }
+}
